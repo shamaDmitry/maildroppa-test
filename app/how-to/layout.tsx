@@ -1,10 +1,10 @@
 import Header from "@/Components/Header";
 import Headline from "@/Components/Headline";
 import Link from "next/link";
-import React from "react";
+import React, { PropsWithChildren } from "react";
 import { v4 as uuidv4 } from "uuid";
 
-interface HowToLayoutProps extends React.PropsWithChildren {}
+interface HowToLayoutProps extends PropsWithChildren {}
 
 const menu = [
   {

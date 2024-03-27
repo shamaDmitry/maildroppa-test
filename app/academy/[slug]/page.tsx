@@ -1,9 +1,7 @@
-import Headline from "@/Components/Headline";
+interface PageProps {
+  slug: string;
+}
 
-export default function Page() {
-  return (
-    <section className="container py-10">
-      <Headline>One Academy page</Headline>
-    </section>
-  );
+export default function Page({ params }: { params: PageProps }) {
+  return <div>My Post: {params.slug}</div>;
 }
